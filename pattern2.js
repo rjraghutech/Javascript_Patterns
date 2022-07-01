@@ -1,40 +1,36 @@
-var n=5;
+var n=3;
 let string = "";
 for(let i=1;i<=n;i++)
 {
     for(let j=n;j>i;j--)
     {
-        string += " ";
+        string += "  ";
     }
-    //console.log("*");
-    for(let k=1;k<2*(i-1);k++)
+    for(let k=0;k<i*2-1;k++)
     {
-        //console.log(" ");
-        if(i==1)
+        if(k==0 || k==2*i-2)
         {
-            string += "*"; 
+            string += "* "; 
         }
         else{
-            string += " ";
+            string += "  ";
         }
     }string += "\n";
 }
 for(let i=1;i<=n-1;i++)
 {
-    for(let j=n;j>i;j--)
+    for(let j=0;j<i;j++)
     {
-        string += " ";
+        string += "  ";
     }
-    //console.log("*");
-    for(let k=1;k<2*(i-1);k++)
+    for(let k=(n-i)*2-1;k>=1;k--)
     {
-        //console.log(" ");
-        if(i==1)
+        if(k==1 || k==(n-i)*2-1)
         {
-            string += "*";
+            string += "* ";
         }
         else{
-            string += " ";
+            string += "  ";
         }
     }string += "\n";
 }
