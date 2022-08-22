@@ -1,4 +1,4 @@
-var n=5;
+var n=10;
 
 for(let i=0;i<n;i++)
 {
